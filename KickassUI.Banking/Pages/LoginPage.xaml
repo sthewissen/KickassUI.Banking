@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:BasePage ShowLogo="true" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="KickassUI.Banking.Pages.LoginPage" xmlns:pages="clr-namespace:KickassUI.Banking.Pages" xmlns:controls="clr-namespace:KickassUI.Banking.Controls">
+    <pages:BasePage.BasePageContent>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Image Source="background.jpg" Grid.RowSpan="2" Aspect="AspectFill" />
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout VerticalOptions="Center" Spacing="0">
+                    <Label HorizontalTextAlignment="Center" Margin="0,24,0,0" Text="J. Doe" FontSize="28" TextColor="#ffffff" Style="{StaticResource bold_label}" />
+                    <Label HorizontalTextAlignment="Center" Margin="0" Text="NL ABNA 55 *** ** *3 293" TextColor="#ffffff" />
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Spacing="0" Grid.Row="1">
+                    <Label HorizontalTextAlignment="Center" Text="Inloggen met je identificatiecode" Opacity="0.7" FontSize="16" TextColor="#ffffff" />
+                    <Label HorizontalTextAlignment="Center" Margin="0,8,0,0" Text="     " FontSize="32" FontFamily="{StaticResource FontAwesome5FreeRegular}" TextColor="#ffffff" />
+                </StackLayout>
+            </Grid>
+            <controls:Numpad />
+        </Grid>
+    </pages:BasePage.BasePageContent>
+    <pages:BasePage.BasePageTitleBarLeftContent>
+        <Button Margin="8,0,0,0" Style="{StaticResource round_icon_button}" FontFamily="{StaticResource FontAwesome5FreeSolid}" Text="" VerticalOptions="Center" />
+    </pages:BasePage.BasePageTitleBarLeftContent>
+    <pages:BasePage.BasePageTitleBarRightContent>
+        <Button Text="Scan en betaal" VerticalOptions="Center" />
+    </pages:BasePage.BasePageTitleBarRightContent>
+</pages:BasePage>

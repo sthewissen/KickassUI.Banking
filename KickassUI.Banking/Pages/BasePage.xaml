@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage x:Name="basePage" BackgroundColor="#ffffff" NavigationPage.HasNavigationBar="false" xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="KickassUI.Banking.Pages.BasePage" xmlns:effects="clr-namespace:KickassUI.Banking.Effects">
+    
+    <Grid x:Name="RootGrid" RowSpacing="0" ColumnSpacing="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <!-- The actual title bar grid -->
+        <Grid Grid.Row="0" HeightRequest="90" Padding="12,0" VerticalOptions="EndAndExpand" BackgroundColor="#ffffff">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0" Orientation="Horizontal">
+                <Button WidthRequest="36" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource icon_button}" FontFamily="{StaticResource FontAwesome5FreeSolid}" Text="" />
+                <StackLayout x:Name="TitleBarLeftContent" Orientation="Horizontal">
+                    <!-- This is where content for the left part of the title bar goes -->
+                </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="TitleBarRightContent" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                <!-- This is where content for the right part of the title bar goes -->
+            </StackLayout>
+        </Grid>
+            
+        <Label x:Name="TitleLabel" Text="{Binding Title, Source={x:Reference basePage}}" FontFamily="{StaticResource PoppinsBold}" HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+        
+        <Grid x:Name="BaseContentGrid" RowSpacing="0" ColumnSpacing="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="2">
+            <!--This is the placeholder where actual content will be loaded into...-->
+        </Grid> 
+        
+        <!--The logo, spanning across the top row and onto the content below it -->
+        <Image x:Name="Logo" IsVisible="false" Source="abn_logo.png" Grid.Row="0" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand" Scale="1.5" VerticalOptions="EndAndExpand" Margin="0,0,0,-24" />
+   </Grid>
+</ContentPage>

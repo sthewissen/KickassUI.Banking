@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="KickassUI.Banking.App" xmlns:custom="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesome5FreeRegular">
+                <On Platform="iOS" Value="FontAwesome5Free-Regular" />
+                <On Platform="Android" Value="fontawesome_regular.otf#Regular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesome5FreeSolid">
+                <On Platform="iOS" Value="FontAwesome5Free-Solid" />
+                <On Platform="Android" Value="fontawesome_solid.otf#Solid" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="PoppinsRegular">
+                <On Platform="iOS" Value="Poppins-Regular" />
+                <On Platform="Android" Value="PoppinsRegular.ttf#Regular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="PoppinsBold">
+                <On Platform="iOS" Value="Poppins-Bold" />
+                <On Platform="Android" Value="PoppinsBold.ttf#Bold" />
+            </OnPlatform>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Padding" Value="16,0,16,0" />
+                <Setter Property="TextColor" Value="#5d5d5d" />
+                <Setter Property="BackgroundColor" Value="#f8f8f8" />
+                <Setter Property="HeightRequest" Value="36" />
+                <Setter Property="CornerRadius" Value="4" />
+                <Setter Property="FontSize" Value="11" />
+                <Setter Property="FontFamily" Value="{StaticResource PoppinsRegular}" />
+            </Style>
+            <Style x:Key="cta_button" TargetType="{x:Type Button}">
+                <Setter Property="Padding" Value="8" />
+                <Setter Property="TextColor" Value="#242839" />
+                <Setter Property="BackgroundColor" Value="#f2c002" />
+                <Setter Property="HeightRequest" Value="44" />
+                <Setter Property="CornerRadius" Value="4" />
+                <Setter Property="FontSize" Value="13" />
+                <Setter Property="FontFamily" Value="{StaticResource PoppinsRegular}" />
+            </Style>
+            <Style x:Key="icon_button" TargetType="{x:Type Button}">
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="WidthRequest" Value="36" />
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+            <Style x:Key="round_icon_button" TargetType="{x:Type Button}">
+                <Setter Property="TextColor" Value="#ffffff" />
+                <Setter Property="BackgroundColor" Value="#099494" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="HeightRequest" Value="28" />
+                <Setter Property="WidthRequest" Value="28" />
+                <Setter Property="CornerRadius" Value="14" />
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+            <Style TargetType="{x:Type Label}">
+                <Setter Property="TextColor" Value="#5d5d5d" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontFamily" Value="{StaticResource PoppinsRegular}" />
+            </Style>
+            <Style x:Key="bold_label" TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="{StaticResource PoppinsBold}" />
+            </Style>
+          <Style x:Key="action_highlighted" TargetType="custom:PancakeView">
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="HorizontalOptions" Value="Start"/>
+            <Setter Property="Margin" Value="8,0,8,0"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="BackgroundColor" Value="#005e5c"/>
+          </Style>
+          <Style x:Key="action_normal" TargetType="custom:PancakeView">
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="HorizontalOptions" Value="Start"/>
+            <Setter Property="Margin" Value="8,0,8,0"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="BackgroundColor" Value="#e0e0e0"/>
+          </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

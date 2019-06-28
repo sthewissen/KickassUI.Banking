@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:BasePage Title="Rekeningen" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pages="clr-namespace:KickassUI.Banking.Pages" x:Class="KickassUI.Banking.Pages.OverviewPage" xmlns:custom="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <pages:BasePage.BasePageContent>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="108" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView Orientation="Horizontal" BackgroundColor="#f4f4f4" VerticalOptions="Fill" Padding="8,16" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <custom:PancakeView Padding="12" Style="{StaticResource action_highlighted}" HeightRequest="76" WidthRequest="84">
+                        <StackLayout VerticalOptions="Center">
+                            <Label FontSize="24" HorizontalTextAlignment="Center" TextColor="#ffffff" Text="" FontFamily="{StaticResource FontAwesome5FreeRegular}" />
+                            <Label FontSize="13" HorizontalTextAlignment="Center" TextColor="#ffffff" Text="Rekeningen" />
+                        </StackLayout>
+                    </custom:PancakeView>
+                    <custom:PancakeView Style="{StaticResource action_normal}" HeightRequest="68" WidthRequest="84">
+                        <StackLayout VerticalOptions="Center">
+                            <Label FontSize="24" HorizontalTextAlignment="Center" Text="" FontFamily="{StaticResource FontAwesome5FreeSolid}" />
+                            <Label FontSize="13" HorizontalTextAlignment="Center" Text="Zelf regelen" />
+                        </StackLayout>
+                    </custom:PancakeView>
+                    <custom:PancakeView Style="{StaticResource action_normal}" HeightRequest="68" WidthRequest="84">
+                        <StackLayout VerticalOptions="Center">
+                            <Label FontSize="24" HorizontalTextAlignment="Center" Text="" FontFamily="{StaticResource FontAwesome5FreeRegular}" />
+                            <Label FontSize="13" HorizontalTextAlignment="Center" Text="Bankmail" />
+                        </StackLayout>
+                    </custom:PancakeView>
+                    <custom:PancakeView Style="{StaticResource action_normal}" HeightRequest="68" WidthRequest="84">
+                        <StackLayout VerticalOptions="Center">
+                            <Label FontSize="24" HorizontalTextAlignment="Center" Text="" FontFamily="{StaticResource FontAwesome5FreeSolid}" />
+                            <Label FontSize="13" HorizontalTextAlignment="Center" Text="Instellingen" />
+                        </StackLayout>
+                    </custom:PancakeView>
+                </StackLayout>
+            </ScrollView>
+            <ScrollView Grid.Row="1" BackgroundColor="#f4f4f4" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+                <StackLayout Spacing="1">
+                    <Grid RowSpacing="0" BackgroundColor="#ffffff" Padding="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="64" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.RowSpan="3" FontSize="36" TextColor="#019287" VerticalOptions="Center" HorizontalTextAlignment="Start" Text="" FontFamily="{StaticResource FontAwesome5FreeRegular}" />
+                        <Label Grid.Column="1" Grid.Row="0" TextColor="#019287" FontSize="13" HorizontalTextAlignment="Start" Text="J. Doe" />
+                        <Label Grid.Column="1" Grid.Row="1" FontSize="13" HorizontalTextAlignment="Start" Text="Priverekening" />
+                        <Label Grid.Column="1" Grid.Row="2" FontSize="13" HorizontalTextAlignment="Start" Text="NL35 ABNA 0123 4567 89" />
+                        <Label Grid.Column="2" Grid.RowSpan="3" TextColor="#000000" FontSize="16" HorizontalTextAlignment="Start" Text="€ 1.039,25" Style="{StaticResource bold_label}" />
+                    </Grid>
+                    <Grid RowSpacing="0" BackgroundColor="#ffffff" Padding="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="64" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.RowSpan="3" FontSize="36" TextColor="#019287" VerticalOptions="Center" HorizontalTextAlignment="Start" Text="" FontFamily="{StaticResource FontAwesome5FreeSolid}" />
+                        <Label Grid.Column="1" Grid.Row="0" TextColor="#019287" FontSize="13" HorizontalTextAlignment="Start" Text="J. Doe" />
+                        <Label Grid.Column="1" Grid.Row="1" FontSize="13" HorizontalTextAlignment="Start" Text="Direct Sparen" />
+                        <Label Grid.Column="1" Grid.Row="2" FontSize="13" HorizontalTextAlignment="Start" Text="NL35 ABNA 0123 4567 89" />
+                        <Label Grid.Column="2" Grid.RowSpan="3" TextColor="#000000" FontSize="16" HorizontalTextAlignment="Start" Text="€ 8.215,75" Style="{StaticResource bold_label}" />
+                    </Grid>
+                    <Grid RowSpacing="0" BackgroundColor="#ffffff" Padding="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="64" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.RowSpan="3" FontSize="36" TextColor="#019287" VerticalOptions="Center" HorizontalTextAlignment="Start" Text="" FontFamily="{StaticResource FontAwesome5FreeSolid}" />
+                        <Label Grid.Column="1" Grid.Row="0" TextColor="#019287" FontSize="13" HorizontalTextAlignment="Start" Text="J. Doe" />
+                        <Label Grid.Column="1" Grid.Row="1" FontSize="13" HorizontalTextAlignment="Start" Text="Direct Sparen" />
+                        <Label Grid.Column="1" Grid.Row="2" FontSize="13" HorizontalTextAlignment="Start" Text="NL35 ABNA 0123 4567 89" />
+                        <Label Grid.Column="2" Grid.RowSpan="3" TextColor="#000000" FontSize="16" HorizontalTextAlignment="Start" Text="€ 12.653,50" Style="{StaticResource bold_label}" />
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+            <Grid Grid.Row="2" Padding="16" BackgroundColor="#ffffff">
+                <Button Style="{StaticResource cta_button}" Text="Overboeken" />
+            </Grid>
+        </Grid>
+    </pages:BasePage.BasePageContent>
+</pages:BasePage>

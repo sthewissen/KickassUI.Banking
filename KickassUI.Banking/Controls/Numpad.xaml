@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Grid Grid.Row="1" RowSpacing="2" ColumnSpacing="2" BackgroundColor="#ffffff" Margin="24,0" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="KickassUI.Banking.Controls.Numpad" xmlns:pages="clr-namespace:KickassUI.Banking.Pages">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding GoToOverviewCommand}" />
+    </Grid.GestureRecognizers>
+    <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="1" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+    </StackLayout>
+    <StackLayout Grid.Row="0" Grid.Column="1" Spacing="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="2" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+        <Label HorizontalTextAlignment="Center" Text="ABC" TextColor="#bdbdbd" />
+    </StackLayout>
+    <StackLayout Grid.Row="0" Grid.Column="2" Spacing="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="3" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+        <Label HorizontalTextAlignment="Center" Text="DEF" TextColor="#bdbdbd" />
+    </StackLayout>
+    <StackLayout Grid.Row="1" Grid.Column="0" Spacing="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="4" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+        <Label HorizontalTextAlignment="Center" Text="GHI" TextColor="#bdbdbd" />
+    </StackLayout>
+    <StackLayout Grid.Row="1" Grid.Column="1" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="5" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+        <Label HorizontalTextAlignment="Center" Text="JKL" TextColor="#bdbdbd" />
+    </StackLayout>
+    <StackLayout Grid.Row="1" Grid.Column="2" Spacing="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="6" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+        <Label HorizontalTextAlignment="Center" Text="MNO" TextColor="#bdbdbd" />
+    </StackLayout>
+    <StackLayout Grid.Row="2" Grid.Column="0" Spacing="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="7" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+        <Label HorizontalTextAlignment="Center" Text="PQRS" TextColor="#bdbdbd" />
+    </StackLayout>
+    <StackLayout Grid.Row="2" Grid.Column="1" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="8" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+        <Label HorizontalTextAlignment="Center" Text="TUV" TextColor="#bdbdbd" />
+    </StackLayout>
+    <StackLayout Grid.Row="2" Grid.Column="2" Spacing="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="9" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+        <Label HorizontalTextAlignment="Center" Text="WXYZ" TextColor="#bdbdbd" />
+    </StackLayout>
+    <StackLayout Grid.Row="3" Grid.Column="0" Spacing="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" Text="" FontSize="28" TextColor="#000000" FontFamily="{StaticResource FontAwesome5FreeRegular}" />
+    </StackLayout>
+    <StackLayout Grid.Row="3" Grid.Column="1" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" Text="0" FontSize="20" TextColor="#000000" Style="{StaticResource bold_label}" />
+    </StackLayout>
+    <StackLayout Grid.Row="3" Grid.Column="2" Spacing="0" Padding="0,8" BackgroundColor="#f3f3f3">
+        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" Text="" FontSize="28" TextColor="#000000" FontFamily="{StaticResource FontAwesome5FreeSolid}" />
+    </StackLayout>
+</Grid>
