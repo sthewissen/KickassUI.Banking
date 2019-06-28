@@ -1,5 +1,7 @@
+<img src="https://www.thewissen.io/wp-content/uploads/xamuijuly-1.png" width="150px" />
+
 # KickassUI.Banking
-A Xamarin.Forms version of a banking app concept, showing off how to use a base page
+A Xamarin.Forms version of a banking app concept, showing off how to use a base page. It's part of the #XamarinUIJuly series of blogposts, which you can learn more about here: https://www.thewissen.io/introducing-xamarin-ui-july. My blog post in the series can be found here: .
 
 ## Tools used
 - MFractor – Awesome productivity tool – https://mfractor.com
